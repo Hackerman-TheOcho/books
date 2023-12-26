@@ -7,7 +7,16 @@ from src.session import Session
 def main():
     '''main function'''
     session = Session()
-    LoginMenu(session).cmdloop()
+    login_cmd = LoginMenu(session)
+    login_cmd.cmdloop()
+
+
+
+if __name__ == '__main__':
+    main()
+
+
+    # # test
     # server_ip = '127.0.0.1'
     # server_port = 8080
 
@@ -27,6 +36,3 @@ def main():
     #     # close socket
     #     sock.close()
     #     print("Connection closed.\n")
-
-if __name__ == '__main__':
-    main()
